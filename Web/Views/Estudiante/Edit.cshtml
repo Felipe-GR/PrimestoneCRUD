@@ -1,0 +1,21 @@
+﻿@model Web.Models.EstudianteViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Modificar Estudiante</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <partial name="_Estudiante" />
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

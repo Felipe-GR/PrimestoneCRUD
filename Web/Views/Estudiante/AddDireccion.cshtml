@@ -1,0 +1,16 @@
+﻿@model Common.Models.Direccion
+
+@{
+    ViewData["Title"] = "Crear";
+}
+
+<h4>Crear Dirección</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <partial name="_Direccion" />
+        </form>
+    </div>
+</div>

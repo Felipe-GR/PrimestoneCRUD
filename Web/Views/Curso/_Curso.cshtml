@@ -1,0 +1,22 @@
+﻿@model Common.Models.Curso
+
+
+<div class="form-group">
+    <label asp-for="Nombre" class="control-label"></label>
+    <input asp-for="Nombre" class="form-control" />
+    <span asp-validation-for="Nombre" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="FechaInicio" class="control-label"></label>
+    <input asp-for="FechaInicio" class="form-control" />
+    <span asp-validation-for="FechaInicio" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="FechaFin" class="control-label"></label>
+    <input asp-for="FechaFin" class="form-control" />
+    <span asp-validation-for="FechaFin" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <input type="submit" value="Save" class="btn btn-primary btn-sm" />
+    <a asp-action="Index" class="btn btn-success btn-sm">Back to List</a>
+</div>
